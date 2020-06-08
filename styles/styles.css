@@ -1,1 +1,142 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+.sequencer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.sequencer .play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  background: #585858;
+  color: white;
+}
+
+.sequencer .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0rem 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sequencer .controls button {
+  padding: 1rem;
+  border: none;
+  background: #585858;
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sequencer .controls select {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.sequencer .track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin-top: 5rem;
+}
+
+.sequencer .pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.sequencer .kick-track .kick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sequencer .kick-track .kick .kick-pad {
+  background: #a0d3e0;
+}
+
+.sequencer .kick-track .kick .kick-pad.active {
+  background: #3bc5e7;
+}
+
+.sequencer .snare-track .snare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sequencer .snare-track .snare .snare-pad {
+  background: #e0a0d0;
+}
+
+.sequencer .snare-track .snare .snare-pad.active {
+  background: #da3ab2;
+}
+
+.sequencer .hihat-track .hihat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sequencer .hihat-track .hihat .hihat-pad {
+  background: #e0c2a0;
+}
+
+.sequencer .hihat-track .hihat .hihat-pad.active {
+  background: #f19e40;
+}
+/*# sourceMappingURL=styles.css.map */
