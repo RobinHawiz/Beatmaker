@@ -51,6 +51,10 @@
     cursor: pointer;
   }
 
+  .mute.active {
+    background: rgb(182, 182, 182);
+  }
+
   .kick-track {
     .kick {
       display: flex;

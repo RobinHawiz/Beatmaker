@@ -12,6 +12,7 @@ class DrumKit {
     this.bpm = 150;
     this.isPlaying = null;
     this.selects = document.querySelectorAll("select");
+    this.muteButtons = document.querySelectorAll(".mute");
   }
   activePad() {
     this.classList.toggle("active");
@@ -69,7 +70,6 @@ class DrumKit {
   changeSound(e) {
     const selectionName = e.target.name;
     const selectionValue = e.target.value;
-    console.log(selectionValue);
 
     switch (selectionName) {
       case "kick-select":
@@ -83,6 +83,36 @@ class DrumKit {
       case "hihat-select":
         this.hihatAudio.src = selectionValue;
         break;
+    }
+  }
+
+  mute(e) {
+    const muteIndex = e.target.getAttribute("data-track");
+    e.target.classList.toggle("active");
+    if (e.target.classList.contains("active")) {
+      switch (muteIndex) {
+        case "0":
+          this.kickAudio.volume = 0;
+          break;
+        case "1":
+          this.snareAudio.volume = 0;
+          break;
+        case "2":
+          this.hihatAudio.volume = 0;
+          break;
+      }
+    } else {
+      switch (muteIndex) {
+        case "0":
+          this.kickAudio.volume = 1;
+          break;
+        case "1":
+          this.snareAudio.volume = 1;
+          break;
+        case "2":
+          this.hihatAudio.volume = 1;
+          break;
+      }
     }
   }
 }
@@ -106,5 +136,11 @@ drumKit.playButton.addEventListener("click", () => {
 drumKit.selects.forEach((select) => {
   select.addEventListener("change", function (e) {
     drumKit.changeSound(e);
+  });
+});
+
+drumKit.muteButtons.forEach((button) => {
+  button.addEventListener("click", function (e) {
+    drumKit.mute(e);
   });
 });

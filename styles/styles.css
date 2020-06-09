@@ -98,6 +98,10 @@ select {
   cursor: pointer;
 }
 
+.sequencer .mute.active {
+  background: #b6b6b6;
+}
+
 .sequencer .kick-track .kick {
   display: -webkit-box;
   display: -ms-flexbox;
