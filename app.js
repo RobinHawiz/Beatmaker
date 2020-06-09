@@ -25,11 +25,11 @@ class DrumKit {
           this.kickAudio.play();
         }
         if (bar.classList.contains("snare-pad")) {
-          this.currentTime = 0;
+          this.snareAudio.currentTime = 0;
           this.snareAudio.play();
         }
         if (bar.classList.contains("hihat-pad")) {
-          this.currentTime = 0;
+          this.hihatAudio.currentTime = 0;
           this.hihatAudio.play();
         }
       }
