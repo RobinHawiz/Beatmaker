@@ -108,7 +108,7 @@ select {
   background: #a0d3e0;
 }
 
-.sequencer .kick-track .kick .kick-pad.active {
+.sequencer .kick-track .kick .active {
   background: #3bc5e7;
 }
 
@@ -122,7 +122,7 @@ select {
   background: #e0a0d0;
 }
 
-.sequencer .snare-track .snare .snare-pad.active {
+.sequencer .snare-track .snare .active {
   background: #da3ab2;
 }
 
@@ -136,7 +136,7 @@ select {
   background: #e0c2a0;
 }
 
-.sequencer .hihat-track .hihat .hihat-pad.active {
+.sequencer .hihat-track .hihat .active {
   background: #f19e40;
 }
 /*# sourceMappingURL=styles.css.map */
