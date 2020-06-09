@@ -15,7 +15,8 @@ svg {
 }
 
 button,
-select {
+select,
+input {
   cursor: pointer;
 }
 
@@ -100,6 +101,29 @@ select {
 
 .sequencer .mute.active {
   background: #b6b6b6;
+}
+
+.sequencer .tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.sequencer .tempo .tempo-slider {
+  padding: 0.4rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #585858;
+  border-radius: 1rem;
+}
+
+.sequencer .tempo p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem;
 }
 
 .sequencer .kick-track .kick {
